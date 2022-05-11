@@ -8,6 +8,34 @@ Create a function named sumLargestNumbers that will receive an array of numbers 
 
 const sumLargestNumbers = function(data) {
     // Put your solution here
+    let largest = data[0]
+    let i = 0
+    for ( i = 0; i < data.length; i++) {
+        if (largest < data[i]) {
+        largest = data[i]
+        
+
+        }
+        
+
+        
+        
+        
+    }
+
+    let secondLargest = data[0]
+    for (let i = 0; i < data.length; i++){
+        if (data[i] === largest) {
+            data.splice(i, 1)
+        }
+        if(secondLargest < data[i]) {
+            secondLargest = data[i]
+        }
+        
+    }
+    return largest + secondLargest
+
+
 };
   
 console.log(sumLargestNumbers([1, 10])); // 11

@@ -10,7 +10,29 @@ Use some sort of looping. Do Not use Array.prototype.filter()
 
 const conditionalSum = function(values, condition) {
     // Your code here
-  };
+    let num = 0
+    
+    if(condition === "even"){
+      for(let i = 0; i < values.length; i++){
+        if(values[i] % 2 === 0){
+          num = num + values[i]
+        }}};
+    
+    if(condition === "odd"){
+      for(i = 0; i <values.length; i++){
+        if(values[i] % 2 !== 0  ){
+          num = num + values[i]
+        }
+      }};
+
+          
+    
+ 
+ return num
+};
+   
+
+
   
 console.log(conditionalSum([1, 2, 3, 4, 5], "even")); // 6
 console.log(conditionalSum([1, 2, 3, 4, 5], "odd")); // 9
