@@ -23,8 +23,34 @@ Create a function named urlDecode that will receive a URL encoded string, and re
 
 const urlDecode = function(text) {
   // Put your solution here
+  let txt = text
+  // let str = txt.split("duck")
+  // let word = str
+  for(let i = 0; i < txt.length; i++){
+    let str = txt.split("duck " ," :" , " rubber")
+    let word = str
+    if(txt[i] === txt.split("duck" , ": " ," rubber;" )){
+      txt[i] = {duck : rubber}
+
+    } else  if (txt[i] === "&"){
+      txt[i] = " , "
+
+    } else if (txt[i] === String){
+      txt[i] = ""
+    
+    }else if (txt[i] === "%"){
+      txt[i] = " "
+    }
+    return txt
+    
+  }
+  
+  
+
+  
+  
 };
 
 console.log(urlDecode("duck=rubber")); //{duck: "rubber"}
-console.log(urlDecode("city=Vancouver&weather=lots%20of%20rain")); // {city: "Vancouver", weather: "lots of rain"}
-console.log(urlDecode("city=Vancouver&weather=lots%20of%20rain").weather); // "lots of rain"
+// console.log(urlDecode("city=Vancouver&weather=lots%20of%20rain")); // {city: "Vancouver", weather: "lots of rain"}
+// console.log(urlDecode("city=Vancouver&weather=lots%20of%20rain").weather); // "lots of rain"
