@@ -30,17 +30,14 @@ for(let i = 0; i < recipes.length; i++){
         for(let c = 0; c < bakeryA.length; c++){
               if( ingredient === bakeryA[c] || ingredient === bakeryB[c]){
                   for(let z = 0; z < bakeryB.length; z++){
-                      let o = bakeryB[z]
                       if(recipe.ingredients[b] === bakeryB[z]){
                           return recipe.name
-
-
-                      }
-                  }
-              }
-          }
-      }
-  }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
         
     
