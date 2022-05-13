@@ -21,8 +21,30 @@ This one is a doozy! We might want to start by creating a helper function called
 */
 
 const chooseRecipe = function(bakeryA, bakeryB, recipes) {
-  // Code here!
+//   Code here!
+
+for(let i = 0; i < recipes.length; i++){
+    let recipe = recipes[i]
+    for (let b = 0; b < recipe.ingredients.length; b++){
+        let ingredient = recipe.ingredients[b]
+        for(let c = 0; c < bakeryA.length; c++){
+              if( ingredient === bakeryA[c] || ingredient === bakeryB[c]){
+                  for(let z = 0; z < bakeryB.length; z++){
+                      let o = bakeryB[z]
+                      if(recipe.ingredients[b] === bakeryB[z]){
+                          return recipe.name
+
+
+                      }
+                  }
+              }
+          }
+      }
+  }
 }
+        
+    
+
 
 let bakeryA = ['saffron', 'eggs', 'tomato paste', 'coconut', 'custard'];
 let bakeryB = ['milk', 'butter', 'cream cheese'];
