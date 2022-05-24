@@ -22,28 +22,41 @@ Create a function named urlDecode that will receive a URL encoded string, and re
 */
 
 const urlDecode = function(text) {
-  // Put your solution here
-  let txt = text
-  // let str = txt.split("duck")
-  // let word = str
-  for(let i = 0; i < txt.length; i++){
-    let str = txt.split("duck " ," :" , " rubber")
-    let word = str
-    if(txt[i] === txt.split("duck" , ": " ," rubber;" )){
-      txt[i] = {duck : rubber}
+  // // Put your solution here
+   let txt = text
+    let str = txt.split("duck")
+   let word = str
+   for(let i = 0; i < txt.length; i++){
+     let str = txt.split("=")
+     if(txt[i] === {txt}){
+        txt = {duck}
 
-    } else  if (txt[i] === "&"){
-      txt[i] = " , "
+     } else  if (txt[i] === "&"){
+       txt[i] = " , "
 
-    } else if (txt[i] === String){
-      txt[i] = ""
+     } else if (txt[i] === String){
+       txt[i] = ""
     
-    }else if (txt[i] === "%"){
-      txt[i] = " "
+     }else if (txt[i] === "%"){
+       txt[i] = " "
+     }
+     return {txt}    
+ }
+ 
+  let x = text.split("=")
+   for(let i = 0; i < text.length; i++){
+   if(txt[i] === "=" ){
+       let x = text.split("=")
+        console.log(x)
     }
-    return txt
-    
-  }
+  console.log(x)
+  let obj = {x}
+  console.log(obj)
+   
+
+     
+   }
+
   
   
 

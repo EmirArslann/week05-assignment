@@ -10,6 +10,37 @@ Create a function named talkingCalendar that takes in a date string with the for
 
 const talkingCalendar = function(date) {
   // Your code here
+  switch (date){
+    case 1:
+      return "January";
+    case 2: 
+      return "February";
+    case 3: 
+      return "Mart"; 
+    case 4: 
+      return "April";
+    case 5:
+      return "May";
+    case 6: 
+      return "June";
+    case 7: 
+      return "July";
+    case 8: 
+      return "August";
+    case 9: 
+      return "September";
+    case 10: 
+      return "October";
+    case 11: 
+      return "November";
+    case 12:
+      return "December"           
+         
+
+  }
+
+
+
   
 };
 
